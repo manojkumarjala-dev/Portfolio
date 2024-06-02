@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { projectsData } from '@/lib/data';
 import Sectionheader from './section-header';
+import Project from './project';
 
 export default function Projects() {
     return (
@@ -20,9 +21,4 @@ export default function Projects() {
     );
 }
 
-function Project({title, description, tags}:(typeof projectsData)[number]){
-    return (
-        <div>{title}</div>
-    )
-}
 
