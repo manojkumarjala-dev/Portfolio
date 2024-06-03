@@ -20,7 +20,7 @@ export default function Aboutme() {
                     id='about' ref={ref}>
             <Sectionheader>About Me</Sectionheader>
             <p className='leading-8'>
-            I am a software development engineer with a strong foundation in programming and a passion for creating efficient and user-friendly software solutions. Currently pursuing a Master's in Computer Science at Indiana University Bloomington with a perfect GPA of 4.0, I specialize in developing and optimizing software using Java, Spring Boot, JavaScript, React.js, and Agile Methodologies.
+            I am a software development engineer with a strong foundation in programming and a passion for creating efficient and user-friendly software solutions. Currently pursuing a Masters in Computer Science at Indiana University Bloomington with a perfect GPA of 4.0, I specialize in developing and optimizing software using Java, Spring Boot, JavaScript, React.js, and Agile Methodologies.
 
             </p>
         </motion.section>

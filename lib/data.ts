@@ -39,7 +39,7 @@ export const experiencesData = [
     location: "Chennai, India",
     description:
       "As a Full-Stack Software Engineer, I led the development and enhancement of software solutions in a Spring Boot microservices architecture, focusing on both front-end and back-end aspects. On the back-end, I spearheaded the creation and optimization of RESTful APIs using reactive Java programming and enhanced the efficiency and robustness of existing endpoints with Spring WebFlux. On the front-end, I developed responsive interfaces using ReactJS, Redux, and Saga.js, improving user engagement through innovative design and seamless user experiences. ",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(CgWorkAlt),
     date: "2022-2023",
   },
   {
