@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React,{useEffect} from 'react'
 import Image from 'next/image'
 import img from '../public/img.jpeg'
 import { motion } from 'framer-motion'
@@ -8,9 +8,11 @@ import { BsArrowDown, BsArrowRight } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
 import linkedin from '../public/linkedin-svgrepo-com.svg'
 import github from '../public/github.svg'
+import useSectionInView from '@/lib/hooks'
 export default function Intro() {
+    const {ref }= useSectionInView('Home')
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]'>
+    <section ref={ref} className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] mt-14' id='home'>
         <div className='flex items-center justify-center'>
             <div className='relative'>
                 <motion.div initial={{y:-100, opacity :0}}

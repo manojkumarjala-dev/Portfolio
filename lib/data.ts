@@ -40,7 +40,7 @@ export const experiencesData = [
     description:
       "Full stack developer in Springboot & ReactJS",
     icon: React.createElement(LuGraduationCap),
-    date: "2022",
+    date: "2018",
   },
   {
     title: "Research Intern",
