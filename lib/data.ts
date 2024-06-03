@@ -38,25 +38,17 @@ export const experiencesData = [
     title: "Verizon",
     location: "Chennai, India",
     description:
-      "Full stack developer in Springboot & ReactJS",
+      "As a Full-Stack Software Engineer, I led the development and enhancement of software solutions in a Spring Boot microservices architecture, focusing on both front-end and back-end aspects. On the back-end, I spearheaded the creation and optimization of RESTful APIs using reactive Java programming and enhanced the efficiency and robustness of existing endpoints with Spring WebFlux. On the front-end, I developed responsive interfaces using ReactJS, Redux, and Saga.js, improving user engagement through innovative design and seamless user experiences. ",
     icon: React.createElement(LuGraduationCap),
-    date: "2018",
+    date: "2022-2023",
   },
   {
     title: "Research Intern",
     location: "Hyderabad, India",
     description:
-      "Python",
+      "I specialized in optimizing machine learning algorithms and enhancing model performance. I improved the YOLO Object Detection algorithm by integrating new recognition capabilities and leveraging Python and CUDA for better performance. Additionally, I advanced the Social-LSTM project by curating and refining datasets, which resulted in improved model training and accuracy.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2019 June",
   },
 ] as const;
 
