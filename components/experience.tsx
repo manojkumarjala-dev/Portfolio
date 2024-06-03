@@ -5,6 +5,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import { experiencesData } from '@/lib/data';
 import { useInView } from 'react-intersection-observer';
+import useSectionInView from '@/lib/hooks';
 function Experience() {
     return (
         <section id="experience">
@@ -12,9 +13,7 @@ function Experience() {
             <VerticalTimeline lineColor="#e5e7eb" animate={ true }>
                 {
                     experiencesData.map((item,index)=>{
-                        const { ref, inView } = useInView({
-                            triggerOnce: false,
-                          });
+                        const { ref, inView } = useSectionInView('Experience');
                         return <div key={index} ref={ref} className="vertical-timeline-element">
                         <VerticalTimelineElement
                           contentStyle={{

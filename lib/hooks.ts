@@ -13,5 +13,5 @@ export default function useSectionInView(sectionName: SectionName, threshold = 0
         setActiveSection(sectionName)
     }},[inView, setActiveSection,timeOfLastClick,sectionName])
 
-    return {ref};
+    return {ref,inView};
 }
