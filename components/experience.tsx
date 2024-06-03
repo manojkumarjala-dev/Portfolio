@@ -13,7 +13,7 @@ function Experience() {
             <VerticalTimeline lineColor="#e5e7eb" animate={ true }>
                 {
                     experiencesData.map((item,index)=>{
-                        const { ref, inView } = useSectionInView('Experience');
+                        const { ref, inView } = useSectionInView('Experience',0.75,true);
                         return <div key={index} ref={ref} className="vertical-timeline-element">
                         <VerticalTimelineElement
                           contentStyle={{
