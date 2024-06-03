@@ -12,7 +12,7 @@ function Contact() {
 
     const {ref }= useSectionInView('Contact',0.25)
     return (
-        <motion.section id='contact' ref={ref} className='w-[min(100%,38rem)] text-center mt-10 mb-28' initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}>
+        <motion.section id='contact' ref={ref} className='w-[min(100%,38rem)] text-center  mb-28 px-10 pb-10' initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:2}} viewport={{once:true}}>
             <Sectionheader>Contact me</Sectionheader>
             <p className='-mt-6 mb-4'>Please contact directly at <a href='mailto:jalav@iu.edu' className='underline '>jalav@iu.edu</a> or through this form</p>
             <form action={async formData => {const {data, error} = await sendEmail(formData)

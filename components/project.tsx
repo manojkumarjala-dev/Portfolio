@@ -13,9 +13,9 @@ export default function Project({title, description, tags, imageUrl}:(typeof pro
     const scaleProgress = useTransform(scrollYProgress,[0, 1],[0.8,1])
     const opacityProgress = useTransform(scrollYProgress,[0,1],[0.6,1])
     return (
-        <motion.div style={{scale:scaleProgress,opacity:opacityProgress}} ref={ref} className='group sm:h-[20rem] sm:pr-8 last:mb-0'>
+        <motion.div style={{scale:scaleProgress,opacity:opacityProgress}} ref={ref} className='group sm:h-[20rem] sm:pr-8 sm:pl-8 last:mb-0'>
             <section className=' bg-gray-100 rounded-lg border border-black/5 max-w-[42rem] overflow-hidden my-5 relative sm:h-[20rem] sm:pr-8 last:mb-0 hover:bg-gray-200 transition'>
-            <div className='max-w-[50%] flex flex-col h-full px-5 pb-16 pt-8 group-even:ml-[22rem]'>
+            <div className='pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]'>
             <h3 className='text-2xl font-semibold'>{title}</h3>
             
             <p className=' text-gray-700 leading-relaxed'>{description}</p>
@@ -29,7 +29,18 @@ export default function Project({title, description, tags, imageUrl}:(typeof pro
             </div>
                 
             
-            <Image src={imageUrl} alt={title} quality={95} className='absolute top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[intial] group-even:-left-40 group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-hover:scale-1.05 group-hover:transition group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2'></Image>
+            <Image src={imageUrl} alt={title} quality={95} className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+        transition 
+        group-hover:scale-[1.04]
+        group-hover:-translate-x-3
+        group-hover:translate-y-3
+        group-hover:-rotate-2
+
+        group-even:group-hover:translate-x-3
+        group-even:group-hover:translate-y-3
+        group-even:group-hover:rotate-2
+
+        group-even:right-[initial] group-even:-left-40"'></Image>
             
         </section>
         </motion.div>
