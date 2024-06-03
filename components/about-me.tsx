@@ -10,7 +10,7 @@ export default function Aboutme() {
     
     return (
 
-        <motion.section className='text-center max-w-[40rem] scroll-mt-20' initial={{y:-100, opacity :0}}
+        <motion.section className='text-center max-w-[40rem] scroll-mt-20 px-5' initial={{y:-100, opacity :0}}
         animate={{y:0,opacity:1}} transition={{
                         type:'spring',
                         duration:1.25,

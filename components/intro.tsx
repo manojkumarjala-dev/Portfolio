@@ -14,7 +14,7 @@ export default function Intro() {
     const {ref }= useSectionInView('Home')
     const {activeSection, setActiveSection, setTimeOfLastClick} = useActiveSectionContext()
   return (
-    <section ref={ref} className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem] mt-14' id='home'>
+    <section ref={ref} className='max-w-[60rem] text-center sm:mb-0 scroll-mt-[100rem] mt-14' id='home'>
         <div className='flex items-center justify-center'>
             <div className='relative'>
                 <motion.div initial={{y:-100, opacity :0}}
@@ -30,7 +30,7 @@ export default function Intro() {
             </div>
         </div>
 
-        <motion.p className='mb-10 mt-5 text-2xl font-medium !leading-[1.5] sm:text-2xl pl-8'>
+        <motion.p className='mb-10 mt-5 text-2xl font-medium !leading-[1.5] sm:text-2xl px-4'>
             <motion.span initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.58 }}>
