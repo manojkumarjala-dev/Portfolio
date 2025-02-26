@@ -54,7 +54,7 @@ export default function Intro() {
     <motion.span initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 1.35 }}>
-        with 1.5 years of Experience. My area of expertise is in 
+        with 2 years of Experience. My area of expertise is in 
     </motion.span>
     <motion.span initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
