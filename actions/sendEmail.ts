@@ -23,7 +23,7 @@ export const sendEmail = async (formData: FormData
                 from:'onboarding@resend.dev',
                 to: 'jalav@iu.edu',
                 subject: `Message from ${senderEmail}`,
-                reply_to: senderEmail,
+                replyTo: senderEmail,
                 text: message
     
             }

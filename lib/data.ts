@@ -5,7 +5,9 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
-
+import BeatTheHeatImg from "@/public/BeatTheHeat.png";
+import focus_timer from "@/public/focus_timer.png"
+import oops from "@/public/Oops.png"
 export const links = [
   {
     name: "Home",
@@ -58,21 +60,21 @@ export const projectsData = [
     description:
       "I worked as a full-stack developer on this project. BotBazaar is a robotic rental platform connecting Owners.",
       tags: ["React", "Redux", "MongoDB", "Tailwind", "NodeJS" ],
-      imageUrl: corpcommentImg,
+      imageUrl: oops,
   },
   {
-    title: "rmtDev",
+    title: "FocusPal",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Cross Platform mobile Application useful to have focus timers, set remainders, deadlines for tasks, how many focus sessions you had for each task and many other features.",
+    tags: ["React", "TypeScript", "Expo", "Tailwind", "FireBase"],
+    imageUrl: focus_timer,
   },
   {
-    title: "Word Analytics",
+    title: "Sensor Network",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "In colloboration with the healthy cities lab created a web application that visualizes the sensor information across the Bloomington.",
+    tags: ["React", "Chart.js", "Mapbox", "TailwindCSS", "map-box", "neon serverless database"],
+    imageUrl: BeatTheHeatImg,
   },
 ] as const;
 
