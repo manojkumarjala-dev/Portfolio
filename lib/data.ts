@@ -1,12 +1,9 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import BeatTheHeatImg from "@/public/BeatTheHeat.png";
 import focus_timer from "@/public/focus_timer.png"
+import rnp from "@/public/R&P.png"
 import oops from "@/public/Oops.png"
 export const links = [
   {
@@ -56,11 +53,20 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+      title: "Code2Viz",
+      description: "A code execution platform that runs user-submitted R or Python visualization code inside Docker and returns rendered output",
+      tags: ["Flask", "React", "Docker", "Monaco Editor", "Python", "R"],
+      imageUrl: rnp,
+      githuburl:"https://github.com/manojkumarjala-dev/R_and_Python_Visualizer"
+    },
+  {
     title: "BotBazaar",
     description:
       "I worked as a full-stack developer on this project. BotBazaar is a robotic rental platform connecting Owners.",
       tags: ["React", "Redux", "MongoDB", "Tailwind", "NodeJS" ],
       imageUrl: oops,
+      githuburl:"https://github.com/manojkumarjala-dev/rental-management-system"
+
   },
   {
     title: "FocusPal",
@@ -68,6 +74,8 @@ export const projectsData = [
       "Cross Platform mobile Application useful to have focus timers, set remainders, deadlines for tasks, how many focus sessions you had for each task and many other features.",
     tags: ["React", "TypeScript", "Expo", "Tailwind", "FireBase"],
     imageUrl: focus_timer,
+    githuburl:"https://github.com/manojkumarjala-dev/FocusPal"
+
   },
   {
     title: "Sensor Network",
@@ -75,6 +83,8 @@ export const projectsData = [
       "In colloboration with the healthy cities lab created a web application that visualizes the sensor information across the Bloomington.",
     tags: ["React", "Chart.js", "Mapbox", "TailwindCSS", "map-box", "neon serverless database"],
     imageUrl: BeatTheHeatImg,
+    githuburl:"https://github.com/manojkumarjala-dev/sensor"
+
   },
 ] as const;
 
